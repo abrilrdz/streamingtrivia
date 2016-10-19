@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>Streaming Trivia</title>
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,600|Poppins:300,600" rel="stylesheet">
+<style>
+#amazon {
+display: none;
+}
+
+#hbo {
+display: none;
+}
+
+#hulu {
+display: none;
+}
+
+#netflix {
+display: none;
+}
+
+#showtime {
+display: none;
+}
+
+#statement {
+display: none;
+}
+  
+
+img {
+max-width:100%;
+padding-top:10px
+}
+
+.imgbox {
+width: 30%;
+}
+
+
+body 
+{
+margin-top: 0px;
+margin-left: 0px;
+font-family: 'Josefin Sans', sans-serif; 
+font-size: 25px;
+}
+
+
+#section {
+position: relative;
+width:70%; 
+background-color: white; 
+margin: auto;
+border: 3px solid black;
+max-width: 800px;
+border-radius: 15px;
+}
+ 
+h1 {
+    text-align: center;
+    color: #73d9cd ;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+h3 {
+	font-family: 'Josefin Sans', sans-serif;
+	text-align: center;
+	padding: 10px;
+	font-size: 25px;
+}
+
+form
+{
+font-family: 'Josefin Sans', sans-serif; 
+font-size: 17px;
+font-style: normal; 
+font-weight: normal; 
+text-decoration: none;
+padding-left: 20px;
+padding-right: 10px;
+margin-top: 5px;
+}
+
+.select-style {
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ccc;
+    width: 120px;
+    border-radius: 3px;
+    overflow: hidden;
+    background-color: #fff;
+
+    background: #fff url("http://www.scottgood.com/jsg/blog.nsf/images/arrowdown.gif") no-repeat 90% 50%;
+}
+
+.select-style select {
+    padding: 5px 8px;
+    width: 130%;
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+}
+
+.select-style select:focus {
+    outline: none;
+}
+ 
+</style>
+</head>
+
+
+
+<body background="back.jpg">
+
+<div id="section">
+<center><img src="logome.jpg" style="width:500px"></center>
+
+
+
+<h3>How well do you the original series of these streaming services. Take the quiz and find out!</h3>
+
+
+<form  id="form1"/>
+<div class="select-style">
+<select id="thedropdown" >
+  <option value="0">Choose One</option>
+  <option value="1">Amazon</option>
+  <option value="2">HBO</option>
+  <option value="3">Hulu</option>
+  <option value="4">Netflix</option>
+  <option value="5">Showtime</option>
+</select>
+</div>
+</form>
+
+
+
+
+<div id="amazon">
+<center><img src="gif/amazintro.gif" width="400px"/></center>
+<form  id="form2" action=" ">
+<p>In <strong>"Hand of God"</strong>, what was stolen from PJ's house?</p>
+<input type="radio" name="hog" value="20" />Book<br/>
+<input type="radio" name="hog" value="0" />Ring<br/>
+<input type="radio" name="hog" value="0" />Money<br/>
+<input type="radio" name="hog" value="0" />Painting<br/>
+
+<p>In <strong>"Transparent"</strong>, what is Mort's secret?</p>
+<input type="radio" name="tra" value="0" />He is selling his house.<br/>
+<input type="radio" name="tra" value="0" />He is getting a divorce.<br/>
+<input type="radio" name="tra" value="0" />He has cancer.<br/>
+<input type="radio" name="tra" value="20" />He is transgender.<br/>
+
+<p>In <strong>"Mozart in the Jungle"</strong>, Rodrigo is the Maestro of the ______ Symphony.</p>
+<input type="radio" name="mitj" value="0" />San Fransisco<br/>
+<input type="radio" name="mitj" value="20" />New York<br/>
+<input type="radio" name="mitj" value="0" />Chicago<br/>
+<input type="radio" name="mitj" value="0" />London<br/>
+
+<p>In <strong>"Bosch"</strong>, who did the bones belong to?</p>
+<input type="radio" name="bos" value="20" />13-year-old boy<br/>
+<input type="radio" name="bos" value="0" />56-year-old woman<br/>
+<input type="radio" name="bos" value="0" />17-year-old girl<br/>
+<input type="radio" name="bos" value="0" />40-year-old man<br/>
+
+<p>In <strong>"The Man in the High Castle"</strong>, how is the United States divided by?</p>
+<input type="radio" name="man" value="0" />Rich and Poor<br/>
+<input type="radio" name="man" value="0" />Union and Confederate<br/>
+<input type="radio" name="man" value="20" />Japanese and Germans<br/>
+<input type="radio" name="man" value="0" />Citizens and Immigrants<br/>
+<br/>
+<input type="submit" value="Submit">
+</form>
+
+<p style="padding-left: 20px">Score: <span id="grade">__</span></p>
+<p id="grade2" style="padding-left: 20px"></p>
+
+</div>
+
+<span id="hbo">
+<center><img src="gif/hbointro.gif" width="400px"/></center>
+<form  id="form3" action=" ">
+<p>In <strong>"Game of Thrones"</strong>, who is not on Arya's list?</p>
+<input type="radio" name="got" value="0" />Walder Frey<br/>
+<input type="radio" name="got" value="0" />Cersei Lannister<br/>
+<input type="radio" name="got" value="20" />Jaime Lannister<br/>
+<input type="radio" name="got" value="0" />Melisandre<br/>
+
+<p>In <strong>"Ballers"</strong>, what is Ricky Jerret's beloved number?</p>
+<input type="radio" name="ball" value="0" />81<br />
+<input type="radio" name="ball" value="0" />14<br />
+<input type="radio" name="ball" value="0" />41<br />
+<input type="radio" name="ball" value="20" />18<br />
+
+<p>In <strong>"Veep"</strong>, who is Selina's personal assistant? </p>
+<input type="radio" name="vp" value="20" />Gary<br />
+<input type="radio" name="vp" value="0" />Amy<br />
+<input type="radio" name="vp" value="0" />Dan<br />
+<input type="radio" name="vp" value="0" />Jonah<br />
+
+<p>In <strong>"Girls"</strong>, what does Hanna aspire to do?</p>
+<input type="radio" name="girl" value="0" />Move to New York<br />
+<input type="radio" name="girl" value="20" />Be a writer<br />
+<input type="radio" name="girl" value="0" />Travel the world<br />
+<input type="radio" name="girl" value="0" />Be a singer<br />
+
+<p>In <strong>"Sillicon Valley"</strong>, what is the name of Richard's app?</p>
+<input type="radio" name="sv" value="0" />Hooli<br />
+<input type="radio" name="sv" value="0" />Raviga Cap<br />
+<input type="radio" name="sv" value="0" />Nucleus<br />
+<input type="radio" name="sv" value="20" />Pied Piper<br />
+<br/>
+<input type="submit" value="Submit">
+</form>
+
+<p style="padding-left: 20px">Score: <span id="gradeHBO">__</span></p>
+<p id="gradeHBO2" style="padding-left: 20px"></p>
+
+</span>
+
+
+<span id="hulu">
+<center><img src="gif/huluintro.gif" width="400px"/></center>
+<form  id="form4" action=" ">
+<p>In <strong>"The Mindy Project Show"</strong>, what is Mindy's profession?</p>
+<input type="radio" name="mindy" value="0" />Dentist<br />
+<input type="radio" name="mindy" value="0" />Receptionist<br />
+<input type="radio" name="mindy" value="0" />Nurse<br />
+<input type="radio" name="mindy" value="20" />OB/GYN<br />
+
+<p>In <strong>"11.22.63"</strong>, who plays Jake Epping?</p>
+<input type="radio" name="num" value="0" />Chris Cooper<br />
+<input type="radio" name="num" value="20" />James Franco<br />
+<input type="radio" name="num" value="0" />T.R. Knight<br />
+<input type="radio" name="num" value="0" />Daniel Webber<br />
+
+<p>In <strong>"Difficult People"</strong>, Billy and Julie come up with a scheme to?</p>
+<input type="radio" name="ppl" value="20" />Sell bottled library water-fountain water<br />
+<input type="radio" name="ppl" value="0" />Date a rich man<br />
+<input type="radio" name="ppl" value="0" />Sell children's cuisine at adult prices<br />
+<input type="radio" name="ppl" value="0" />Sell TV sketches<br />
+
+<p>In <strong>"Casual"</strong>, Valerie is?</p>
+<input type="radio" name="cas" value="0" />Newly divorced<br />
+<input type="radio" name="cas" value="0" />A single mother<br />
+<input type="radio" name="cas" value="0" />Living with his brother<br />
+<input type="radio" name="cas" value="20" />All of the above<br />
+
+<p>In <strong>"The Path"</strong>, Eddie and Sarah are members of the ________</p>
+<input type="radio" name="path" value="0" />Alcoholics Anonymous<br />
+<input type="radio" name="path" value="0" />School Board<br />
+<input type="radio" name="path" value="0" />Army<br />
+<input type="radio" name="path" value="20" />Meyerist Movement<br />
+<br/>
+<input type="submit" value="Submit">
+</form>
+
+<p style="padding-left: 20px">Score: <span id="gradeHULU">__</span></p>
+<p id="gradeHULU2" style="padding-left: 20px"></p>
+
+</span>
+
+
+<span id="netflix">
+<center><img src="gif/intronetflix.gif" width="400px"/></center>
+<form  id="form5" action=" ">
+
+<p>In <strong>"Unbreakable Kimmy Schmidt"</strong>, who is Kimmy's talented roommate?</p>
+<input type="radio" name="kim"  value="0" />Jacqueline Voorheese<br/>
+<input type="radio" name="kim"  value="20" />Titus Andromedon<br/>
+<input type="radio" name="kim"  value="0" />Lillian Kaushtupper<br/>
+<input type="radio" name="kim"  value="0" />She lives alone<br/>
+
+<p>In <strong>"Making a Murder"</strong>, for how long was Steven Avery wrongfully incarcerated?</p>
+<input type="radio" name="mam"  value="0" />30 years<br/>
+<input type="radio" name="mam"  value="0" />16 months<br/>
+<input type="radio" name="mam"  value="20" />18 years<br/>
+<input type="radio" name="mam"  value="0" />5 months<br/>
+
+<p>In <strong>"Orange is the New Black"</strong>, who was the winner of the Mock Job Fair?</p>
+<input type="radio" name="jobfair"  value="20" />Taystee<br/>
+<input type="radio" name="jobfair"  value="0" />Flaca<br/>
+<input type="radio" name="jobfair"  value="0" />Nicky<br/>
+<input type="radio" name="jobfair"  value="0" />Sophia<br/>
+
+<p>In <strong>"Narcos"</strong>, Pablo Escobar builds a ______ for him?</p>
+<input type="radio" name="narco" value="0" />Casino<br />
+<input type="radio" name="narco" value="0" />Store<br />
+<input type="radio" name="narco" value="0" />Hotel<br />
+<input type="radio" name="narco" value="20" />Prison<br />
+
+<p>In <strong>"Jessica Jones"</strong>, who is Jessica hiding from?</p>
+<input type="radio" name="jess" value="0" />Luke Cage<br/>
+<input type="radio" name="jess" value="20"/>Zebediah Killgrave<br/>
+<input type="radio" name="jess" value="0"/>Patsy Walker<br/>
+<input type="radio" name="jess" value="0"/>Malcolm Ducasse<br/>
+<br/>
+<input type="submit" value="Submit">
+</form>
+
+<p style="padding-left: 20px">Score: <span id="grade7">__</span></p>
+<p id="grade8" style="padding-left: 20px"></p>
+
+</span>
+
+
+<span id="showtime">
+<center><img src="gif/showintro.gif" width="400px"/></center>
+
+<form  id="form6" action=" ">
+<p>In <strong>"Penny Dreadful"</strong>, Vanessa Ives is?</p>
+<input type="radio" name="pen" value="0" />A woman who is ageless and immortal<br />
+<input type="radio" name="pen" value="20" />Possessed by an evil spirit<br />
+<input type="radio" name="pen" value="0" />Leader of a witch coven<br />
+<input type="radio" name="pen" value="0" />An Irish immigrant<br />
+
+<p>In <strong>"Ray Donovan"</strong>, Donovan works for?</p>
+<input type="radio" name="ray" value="0" />The FBI<br />
+<input type="radio" name="ray" value="20" />Goldman & Drexler<br />
+<input type="radio" name="ray" value="0" />L.A.P.D.<br />
+<input type="radio" name="ray" value="0" />Kaan & Associates<br />
+
+<p>In <strong>"Shameless"</strong>, what was Steve's real name?</p>
+<input type="radio" name="shame" value="0" />Ian<br />
+<input type="radio" name="shame" value="0" />Frank<br />
+<input type="radio" name="shame" value="0" />Craig<br />
+<input type="radio" name="shame" value="20" />Jimmy<br />
+
+<p>In <strong>"Homeland"</strong>, how did Isaa died?</p>
+<input type="radio" name="home" value="0" />Airplane crash<br />
+<input type="radio" name="home" value="20" />Drone attack<br />
+<input type="radio" name="home" value="0" />Car accident <br />
+<input type="radio" name="home" value="0" />Shot by CIA agents<br />
+
+<p>In <strong>"Billions"</strong>, who is a 9/11 survivor?</p>
+<input type="radio" name="bill" value="0" />Bryan Connerty<br />
+<input type="radio" name="bill" value="0" />Wendy Rhoades<br />
+<input type="radio" name="bill" value="20" />Bobby Axelrod<br />
+<input type="radio" name="bill" value="0" />Charles Rhoades<br />
+<br/>
+<input type="submit" value="Submit">
+</form>
+
+<p style="padding-left: 20px">Score: <span id="grade9">__</span></p>
+<p id="grade10" style="padding-left: 20px"></p>
+</span>
+
+</p>
+
+<p id="statement"></p>
+
+
+</div>
+
+
+
+
+<script>
+function off() {
+document.getElementById("amazon").style.display = "none";
+document.getElementById("hbo").style.display = "none";
+document.getElementById("hulu").style.display = "none";
+document.getElementById("showtime").style.display = "none";
+document.getElementById("netflix").style.display = "none";
+document.getElementById("statement").style.display = "none";
+
+}
+
+document.getElementById("form1").onchange=function() {
+choice=document.getElementById("thedropdown").value;  
+
+if (choice == 1) {
+off();
+document.getElementById("amazon").style.display = "block";
+
+}
+if(choice == 2) {
+off();
+document.getElementById("hbo").style.display = "block";
+
+}
+else if (choice == 3) {
+off();
+document.getElementById("hulu").style.display = "block";
+}
+else if (choice == 4) {
+off();
+document.getElementById("netflix").style.display = "block";
+}
+else if (choice == 5){
+off();
+document.getElementById("showtime").style.display = "block";
+}
+else if (choice == 0){
+off();
+document.getElementById("statement").style.display = "block";
+}
+
+return false;
+}
+
+// Amazon Grading
+document.getElementById("form2").onsubmit=function() {
+
+       hog = parseInt(document.querySelector('input[name = "hog"]:checked').value);
+	   tra = parseInt(document.querySelector('input[name = "tra"]:checked').value);
+	   mitj = parseInt(document.querySelector('input[name = "mitj"]:checked').value);
+	   bos = parseInt(document.querySelector('input[name = "bos"]:checked').value);
+	   man = parseInt(document.querySelector('input[name = "man"]:checked').value);
+	   
+	   
+	   result = hog + tra + mitj + bos + man;
+	   
+	document.getElementById("grade").innerHTML = result;
+	
+	if (result == 0) {result2 = "<img src='gif/amaz20.gif' width='300' />"};
+    if (result == 20) {result2 ="<img src='gif/amaz.gif' width='300' />"};
+    if (result == 40) {result2 ="<img src='gif/amaz40.gif' width='300' />"};
+    if (result == 60) {result2 = "<img src='gif/amaz60.gif' width='300' />"};
+    if (result == 80) {result2 = "<img src='gif/amaz80.gif' width='300' />"};
+    if (result == 100) {result2 = "<img src='gif/amaz100.gif' width='300' />"};
+
+	document.getElementById("grade2").innerHTML = result2; 
+
+
+return false; // required to not refresh the page; just leave this here
+}
+
+
+// HBO Grading
+document.getElementById("form3").onsubmit=function() {
+       got = parseInt(document.querySelector('input[name = "got"]:checked').value);
+	   ball = parseInt(document.querySelector('input[name = "ball"]:checked').value);
+	   vp = parseInt(document.querySelector('input[name = "vp"]:checked').value);
+	   girl = parseInt(document.querySelector('input[name = "girl"]:checked').value);
+	   sv = parseInt(document.querySelector('input[name = "sv"]:checked').value);
+	   
+	   
+	   result = got + ball + vp + girl + sv;
+	   
+	document.getElementById("gradeHBO").innerHTML = result;
+	
+	if (result == 0) {result2 = "<img src='gif/hbo123.gif' width='300' />"};
+    if (result == 20) {result2 = "<img src='gif/hbo2.gif' width='300' />"};
+    if (result == 40) {result2 = "<img src='gif/hbo20.gif' width='300' />"};
+    if (result == 60) {result2 = "<img src='gif/hbo40.gif' width='300'/>"};
+    if (result == 80) {result2 = "<img src='gif/hbo80.gif' width='300'/>"};
+    if (result == 100) {result2 = "<img src='gif/hbo100.gif' width='300' />"};
+
+	document.getElementById("gradeHBO2").innerHTML = result2; 
+
+
+return false; // required to not refresh the page; just leave this here
+}
+
+
+//Hulu Grading
+document.getElementById("form4").onsubmit=function() {
+       mindy = parseInt(document.querySelector('input[name = "mindy"]:checked').value);
+	   num = parseInt(document.querySelector('input[name = "num"]:checked').value);
+	   ppl = parseInt(document.querySelector('input[name = "ppl"]:checked').value);
+	   cas = parseInt(document.querySelector('input[name = "cas"]:checked').value);
+	   path = parseInt(document.querySelector('input[name = "path"]:checked').value);
+	   
+	   
+	   result = mindy + num + ppl + cas + path;
+	   
+	document.getElementById("gradeHULU").innerHTML = result;
+	
+	if (result == 0) {result2 = "<img src='gif/hulu.gif' width='300'/>"};
+    if (result == 20) {result2 = "<img src='gif/hulu20.gif' width='300' />"};
+    if (result == 40) {result2 = "<img src='gif/hulu40.gif' width='300' />"};
+    if (result == 60) {result2 = "<img src='gif/hulu60.gif' width='300' />"};
+    if (result == 80) {result2 = "<img src='gif/hulu80.gif' width='300' />"};
+    if (result == 100) {result2 = "<img src='gif/hulu100.gif' width='300' />"};
+
+	document.getElementById("gradeHULU2").innerHTML = result2; 
+
+
+return false; // required to not refresh the page; just leave this here
+}
+
+//Netflix Grading
+document.getElementById("form5").onsubmit=function() {
+       kim = parseInt(document.querySelector('input[name = "kim"]:checked').value);
+	   mam = parseInt(document.querySelector('input[name = "mam"]:checked').value);
+	   jobfair = parseInt(document.querySelector('input[name = "jobfair"]:checked').value);
+	   narco = parseInt(document.querySelector('input[name = "narco"]:checked').value);
+	   jess = parseInt(document.querySelector('input[name = "jess"]:checked').value);
+	   
+	   
+	   result = kim + mam + jobfair + narco + jess;
+	   
+	document.getElementById("grade7").innerHTML = result;
+	
+	if (result == 0) {result2 = "<img src='gif/net.gif' width='300' />"};
+    if (result == 20) {result2 = "<img src='gif/net20.gif' width='300' />"};
+    if (result == 40) {result2 = "<img src='gif/net40.gif' width='300' />"};
+    if (result == 60) {result2 = "<img src='gif/net60.gif' width='300' />"};
+    if (result == 80) {result2 = "<img src='gif/net80.gif' width='300' />"};
+    if (result == 100) {result2 = "<img src='gif/net100.gif' width='300' />"};
+
+	document.getElementById("grade8").innerHTML = result2; 
+
+
+return false; // required to not refresh the page; just leave this here
+}
+
+
+// Showtime Grading
+document.getElementById("form6").onsubmit=function() {
+       pen = parseInt(document.querySelector('input[name = "pen"]:checked').value);
+	   ray = parseInt(document.querySelector('input[name = "ray"]:checked').value);
+	   shame = parseInt(document.querySelector('input[name = "shame"]:checked').value);
+	   home = parseInt(document.querySelector('input[name = "home"]:checked').value);
+	   bill = parseInt(document.querySelector('input[name = "bill"]:checked').value);
+	   
+	   
+	   result = pen + ray + shame + home + bill;
+	   
+	document.getElementById("grade9").innerHTML = result;
+	
+	if (result == 0) {result2 = "<img src='gif/show.gif' width='300' />"};
+    if (result == 20) {result2 = "<img src='gif/show20.gif' width='300' />"};
+    if (result == 40) {result2 = "<img src='gif/show40.gif' width='300' />"};
+    if (result == 60) {result2 = "<img src='gif/show60.gif' width='300' />"};
+    if (result == 80) {result2 = "<img src='gif/show80.gif' width='300' />"};
+    if (result == 100) {result2 = "<img src='gif/show100.gif' width='300' />"};
+
+	document.getElementById("grade10").innerHTML = result2; 
+
+
+return false; // required to not refresh the page; just leave this here
+}
+
+</script>
+</body>
+</html>
